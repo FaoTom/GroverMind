@@ -21,20 +21,20 @@ namespace Qrng {
         return converted;
     }
 
-    function Compare(master : Int[], player : Int[]) : (Bool,Int)[] {
+    function Compare(master : Int[], player : Int[]) : Int[] {
         //Compares the two sequences of colors.
         //For each position in the grid, returns a tuple containing a boolean (true if the colors are matching,
         //false otherwise) and the color of the player sequence.
         
         mutable nBlack = 0;
         mutable nWhite = 0;
-        
-        for ((m, p) in Zipped(master, player)){
+    
+        for (m, p) in Zipped(master, player){
                 if (m==p){
                     set nBlack = nBlack + 1;
                 }
-                elif{
-                    for (k in master){
+                else{
+                    for k in master{ //se è possibile vettorizzare questa top. Intanto così
                         if (p==k){
                             set nWhite = nWhite + 1;
                         }
@@ -42,8 +42,8 @@ namespace Qrng {
                     
                 }
             }
-           
-        return check;
+        
+        return [nBlack, nWhite];
     }
 
     function AllAreTrue(arr : (Bool,Int)[]) : Bool { 
@@ -83,6 +83,34 @@ namespace Qrng {
         return converted;
     }
 
+    function generateSequences(nColors : Int, nPositions : Int) : Int[][] {
+        let nCombinations = nColors^nPositions;
+        mutable AllSequences = new Int[][nCombinations];
+        for i in 0..3{
+            for j in 0..3{
+                for k in 0..3{
+                    for l in 0..3{
+                        for m in 0..3{
+                            set AllSequences w/=(4^4*i+4^3*j+4^2*k+4*l+m)  <- [i,j,k,l,m];
+                        }
+                        
+                    }
+                }
+            }
+        }
+        return AllSequences;
+
+    }
+
+    function constrainChoice(AllSequences : Int[][], player: Int[], nBlack : Int, nWhite : Int): Bool[]{
+        //return (Mapped(Compare, Zipped(player, AllSequences)) == [nBlack, nWhite]);
+        mutable BoolOutput = new Bool[];
+        mutable count = 0;
+        for i in 0..Length(AllSequences){
+            set BoolOutput w/=count <- (Compare(AllSequences[i], player) == [nBlack, nWhite]);
+            set count <- count + 1;
+    }
+EqualA
 // Operations____________________________________________________________________________________________
 
     operation InitialSequence() : Int[] {
@@ -96,14 +124,18 @@ namespace Qrng {
         return arr1;
     }
     
-    operation MarkMatchingColors(input : Qubit[], check : (Bool,Int)[], target : Qubit) : Unit is Adj {
-        //GroverMind oracle
+    operation MarkMatchingColors(input : Qubit[], BlackNWhite : Bool[], target : Qubit) : Unit is Adj {
+        //GroverMind oracle, forse anche qui il nome non ha senso.
+
         let register_chunk = Chunks(2,input);
-        use controlQubit = Qubit[Length(input)/2];
+        use controlBlack = Qubit[3];
+        use controlWhite = Qubit[3];
+
         within {
-            for ((guess, col), (Q, control)) in Zipped(check, Zipped(register_chunk, controlQubit)){
+
+            for ((guess, col), (Q, control)) in Zipped(BlackNWhite, Zipped(register_chunk, controlQubit)){
                 if guess{
-                    ControlledOnInt(col,X)(Q,control);
+                    ControlledOnInt(col,X)(Q,control); 
                 }
                 else {
                     X(control); 
