@@ -8,6 +8,7 @@ namespace Qrng {
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Arrays;
     open Microsoft.Quantum.Diagnostics;
+    open Microsoft.Quantum.Logical;
     
 // Functions____________________________________________________________________________________________
 
@@ -102,15 +103,19 @@ namespace Qrng {
 
     }
 
-    function constrainChoice(AllSequences : Int[][], player: Int[], nBlack : Int, nWhite : Int): Bool[]{
-        //return (Mapped(Compare, Zipped(player, AllSequences)) == [nBlack, nWhite]);
-        mutable BoolOutput = new Bool[];
-        mutable count = 0;
-        for i in 0..Length(AllSequences){
-            set BoolOutput w/=count <- (Compare(AllSequences[i], player) == [nBlack, nWhite]);
-            set count <- count + 1;
+    function IsTrue(a : Bool): Bool{
+        return a;
     }
-EqualA
+
+    function constrainChoice(AllSequences : Int[][], player: Int[], nBlack : Int, nWhite : Int): Int[][]{
+        //return (Mapped(Compare, Zipped(player, AllSequences)) == [nBlack, nWhite]);
+        mutable BoolOutput = new Bool[Length(AllSequences)];
+        for (idx, sequence) in Enumerated(AllSequences){
+            set BoolOutput w/=idx <- EqualA(EqualI, Compare(sequence, player), [nBlack, nWhite]);
+    }
+    return Subarray(Where(IsTrue, BoolOutput), AllSequences);
+    }
+
 // Operations____________________________________________________________________________________________
 
     operation InitialSequence() : Int[] {
@@ -124,18 +129,14 @@ EqualA
         return arr1;
     }
     
-    operation MarkMatchingColors(input : Qubit[], BlackNWhite : Bool[], target : Qubit) : Unit is Adj {
-        //GroverMind oracle, forse anche qui il nome non ha senso.
-
+    operation MarkMatchingColors(input : Qubit[], ValidSequences: Int[][], target : Qubit) : Unit is Adj {
+        //GroverMind oracle
         let register_chunk = Chunks(2,input);
-        use controlBlack = Qubit[3];
-        use controlWhite = Qubit[3];
-
+        use controlQubit = Qubit[Length(input)/2];
         within {
-
-            for ((guess, col), (Q, control)) in Zipped(BlackNWhite, Zipped(register_chunk, controlQubit)){
+            for ((guess, col), (Q, control)) in Zipped(check, Zipped(register_chunk, controlQubit)){
                 if guess{
-                    ControlledOnInt(col,X)(Q,control); 
+                    ControlledOnInt(col,X)(Q,control);
                 }
                 else {
                     X(control); 
