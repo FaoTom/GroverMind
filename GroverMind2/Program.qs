@@ -1,4 +1,4 @@
-namespace Qrng {
+namespace GroverMind {
 
     open Microsoft.Quantum.Convert;
     open Microsoft.Quantum.Random;
@@ -21,6 +21,17 @@ namespace Qrng {
         }
         return converted;
     }
+
+    function IntToBoolArray(inputs : Int[][]) : Bool[][] {
+        //Esmero
+        mutable ConvertedValid = new Bool[][10];
+        for (i, sequence) in Enumerated(inputs){
+            let func = IntAsBoolArray(_,2);
+            set ConvertedValid w/= i <- Flattened(Mapped(func, sequence));
+        }
+        return ConvertedValid;
+    }
+
 
     function Compare(master : Int[], player : Int[]) : Int[] {
         //Compares the two sequences of colors.
@@ -61,19 +72,6 @@ namespace Qrng {
         return check; 
     }
 
-    function CountHowManyTrue(arr : (Bool,Int)[]) : Int { 
-        //Returns a the number of trues in the array of tuples
-        mutable count = 0; 
-
-        for i in 0..Length(arr)-1{ 
-            let (guess, col) = arr[i];
-            if guess{ 
-                set count = count +1; 
-            } 
-        } 
-        return count;
-    }
-
     function Colorify(input: Int[]) : String[] {
         //Returns the array of colours given an array of integers
         mutable converted = new String[Length(input)];
@@ -110,8 +108,8 @@ namespace Qrng {
     function constrainChoice(AllSequences : Int[][], player: Int[], nBlack : Int, nWhite : Int): Int[][]{
         //return (Mapped(Compare, Zipped(player, AllSequences)) == [nBlack, nWhite]);
         mutable BoolOutput = new Bool[Length(AllSequences)];
-        for (idx, sequence) in Enumerated(AllSequences){
-            set BoolOutput w/=idx <- EqualA(EqualI, Compare(sequence, player), [nBlack, nWhite]);
+        for (i, sequence) in Enumerated(AllSequences){
+            set BoolOutput w/=i <- EqualA(EqualI, Compare(sequence, player), [nBlack, nWhite]);
     }
     return Subarray(Where(IsTrue, BoolOutput), AllSequences);
     }
@@ -131,19 +129,9 @@ namespace Qrng {
     
     operation MarkMatchingColors(input : Qubit[], ValidSequences: Int[][], target : Qubit) : Unit is Adj {
         //GroverMind oracle
-        let register_chunk = Chunks(2,input);
-        use controlQubit = Qubit[Length(input)/2];
-        within {
-            for ((guess, col), (Q, control)) in Zipped(check, Zipped(register_chunk, controlQubit)){
-                if guess{
-                    ControlledOnInt(col,X)(Q,control);
-                }
-                else {
-                    X(control); 
-                }
-            }
-        } apply {
-            Controlled X(controlQubit, target);
+        mutable ConvertedValid = IntToBoolArray(ValidSequences);
+        for converted in ConvertedValid{
+            ControlledOnBitString(converted,X)(input, target);
         }
     }
 
@@ -189,6 +177,8 @@ namespace Qrng {
         
         //Initializing number of qubits = 2 * number of point
         let nQubits = 10;
+        let nColors = 4;
+        let nPositions = 5;
 
         //Generating the sequence of colours for the master
         let master_sequence = InitialSequence();           
@@ -211,23 +201,24 @@ namespace Qrng {
         //Allocating 10 qubits for the points and control qubit
         use (register, output) = (Qubit[nQubits], Qubit());
 
-        //Initializing check list comparing the first guess with the master
-        mutable well_done = Compare(master_sequence, player_sequence);
-
+        let allSequences = generateSequences(nColors,nPositions);
+        mutable pegs = Compare(master_sequence, player_sequence);
         //Cycle until the points are all guessed
         repeat{
+            //Initializing check list comparing the first guess with the master
             
+            mutable constrained = constrainChoice(allSequences, player_sequence,pegs[0],pegs[1]);
             //Updating value of correctly guessed points
-            set guessed = CountHowManyTrue(well_done);
+            set guessed = Length(constrained);
 
             //Calculating number of expected calls of the oracle for Grover's algorithm
-            set nIterations = Round(PI()  * PowD(2.,  IntAsDouble(guessed) - 2. ));
+            set nIterations = Round(PI()/4.  * Sqrt(1024./IntAsDouble(guessed)));
 
             //Updating counter
             set iter+=1;
             
             //Updating conditions in the marking oracle
-            let MarkingOracle = MarkMatchingColors(_,well_done,_);
+            let MarkingOracle = MarkMatchingColors(_,constrained,_);
             
             //Updating phase oracle
             let PhaseOracle = ApplyMarkingOracleAsPhaseOracle(MarkingOracle,_);
@@ -240,7 +231,7 @@ namespace Qrng {
 
             //Saving guess and comparing it with the master sequence
             set answer = ResultArrayAsBoolArray(res);
-            set well_done = Compare(master_sequence, Convert(answer));
+            set pegs = Compare(master_sequence, Convert(answer));
 
             //Output to terminal
             Message($"\n=======================================================");
@@ -252,7 +243,7 @@ namespace Qrng {
             ResetAll(register);
         
 
-        } until AllAreTrue(well_done);
+        } until (pegs[0]==nColors);
 
         //Final output
         Message($"\n\nFantastico :D GroverMind found the solution in {iter} guesses!");
