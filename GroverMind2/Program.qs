@@ -12,7 +12,7 @@ namespace GroverMind {
     
 // Functions____________________________________________________________________________________________
 
-    function Convert(inputs : Bool[]) : Int[] {
+    function BoolToIntArray(inputs : Bool[]) : Int[] {
         //Converts from array of couples of bits to array of integers.
         mutable converted = new Int[5];
         let chunks = Chunks(2,inputs);
@@ -22,54 +22,47 @@ namespace GroverMind {
         return converted;
     }
 
+    function IsNumberPresentInArray(n : Int, array : Int[]) : Bool {
+    return Any(EqualI(_, n), array);
+    }
+
     function IntToBoolArray(inputs : Int[][]) : Bool[][] {
-        //Esmero
-        mutable ConvertedValid = new Bool[][10];
+        mutable ConvertedValid = new Bool[][Length(inputs)];
         for (i, sequence) in Enumerated(inputs){
-            let func = IntAsBoolArray(_,2);
-            set ConvertedValid w/= i <- Flattened(Mapped(func, sequence));
+            set ConvertedValid w/= i <- Flattened(Mapped(IntAsBoolArray(_,2), sequence));
         }
         return ConvertedValid;
     }
-
 
     function Compare(master : Int[], player : Int[]) : Int[] {
         //Compares the two sequences of colors.
         //For each position in the grid, returns a tuple containing a boolean (true if the colors are matching,
         //false otherwise) and the color of the player sequence.
-        
+        mutable tank = new Int[Length(player)];
         mutable nBlack = 0;
         mutable nWhite = 0;
-    
-        for (m, p) in Zipped(master, player){
-                if (m==p){
-                    set nBlack = nBlack + 1;
-                }
-                else{
-                    for k in master{ //se è possibile vettorizzare questa top. Intanto così
-                        if (p==k){
-                            set nWhite = nWhite + 1;
-                        }
+        mutable mask_black = [false, false, false, false, false];
+        mutable mask_used = [false, false, false, false, false];
+
+        for i in 0..Length(player)-1{
+            if (player[i] == master[i]){
+                set mask_black w/=i <- true;
+                set nBlack = nBlack + 1;
+            }
+        }
+        for i in 0..Length(player)-1{
+            if (not mask_black[i]){
+                for j in 0..Length(player)-1{
+                    if(player[i]==master[j] and not mask_used[j]){
+                        set nWhite = nWhite + 1;
+                        set mask_used w/=i <- true;
+                        break;
                     }
-                    
                 }
             }
+        }
         
         return [nBlack, nWhite];
-    }
-
-    function AllAreTrue(arr : (Bool,Int)[]) : Bool { 
-        //Returns a true if the array of tuples in input contains all trues in the first entry
-        mutable count = 0; 
-
-        for i in 0..Length(arr)-1{ 
-            let (guess, col) = arr[i];
-            if guess{ 
-                set count = count +1; 
-            } 
-        } 
-        let check = count == Length(arr); 
-        return check; 
     }
 
     function Colorify(input: Int[]) : String[] {
@@ -85,11 +78,11 @@ namespace GroverMind {
     function generateSequences(nColors : Int, nPositions : Int) : Int[][] {
         let nCombinations = nColors^nPositions;
         mutable AllSequences = new Int[][nCombinations];
-        for i in 0..3{
-            for j in 0..3{
-                for k in 0..3{
-                    for l in 0..3{
-                        for m in 0..3{
+        for i in 0..nColors-1{
+            for j in 0..nColors-1{
+                for k in 0..nColors-1{
+                    for l in 0..nColors-1{
+                        for m in 0..nColors-1{
                             set AllSequences w/=(4^4*i+4^3*j+4^2*k+4*l+m)  <- [i,j,k,l,m];
                         }
                         
@@ -116,12 +109,10 @@ namespace GroverMind {
 
 // Operations____________________________________________________________________________________________
 
-    operation InitialSequence() : Int[] {
+    operation InitialSequence(nPositions: Int, nColors: Int) : Int[] {
         //Generates a sequence of colours
-        let cycles = 5;
-        let nColors = 4;
-        mutable arr1 = new Int[cycles];
-        for i in 0 .. cycles-1{
+        mutable arr1 = new Int[nPositions];
+        for i in 0 .. nPositions-1{
             set arr1 w/= i <- DrawRandomInt(0,nColors-1);
         }
         return arr1;
@@ -179,15 +170,13 @@ namespace GroverMind {
         let nQubits = 10;
         let nColors = 4;
         let nPositions = 5;
+        let N = IntAsDouble(nColors^nPositions);
 
         //Generating the sequence of colours for the master
-        let master_sequence = InitialSequence();           
-
-        //Generating the initial guess for the player                      
-        let player_sequence = InitialSequence();                                 
+        let master_sequence = InitialSequence(nPositions, nColors);                              
 
         //Initializing number of guessed points
-        mutable guessed = 0;
+        mutable compatible = 0;
 
         //Initializing number of iterations for Grover's algorithm
         mutable nIterations = 0;
@@ -201,19 +190,20 @@ namespace GroverMind {
         //Allocating 10 qubits for the points and control qubit
         use (register, output) = (Qubit[nQubits], Qubit());
 
-        let allSequences = generateSequences(nColors,nPositions);
-        mutable pegs = Compare(master_sequence, player_sequence);
+        let allSequences = generateSequences(nColors, nPositions);
+    
+        mutable pegs = [0,0];
+        mutable constrained = allSequences;
+
         //Cycle until the points are all guessed
         repeat{
-            //Initializing check list comparing the first guess with the master
-            
-            mutable constrained = constrainChoice(allSequences, player_sequence,pegs[0],pegs[1]);
-            //Updating value of correctly guessed points
-            set guessed = Length(constrained);
+    
+            //Updating value of correctly compatible points
+            set compatible = Length(constrained);
 
             //Calculating number of expected calls of the oracle for Grover's algorithm
-            set nIterations = Round(PI()/4.  * Sqrt(1024./IntAsDouble(guessed)));
-
+            set nIterations = Round(PI()/4.*1./ArcSin(Sqrt(IntAsDouble(compatible)/N))-0.5);
+            
             //Updating counter
             set iter+=1;
             
@@ -231,19 +221,26 @@ namespace GroverMind {
 
             //Saving guess and comparing it with the master sequence
             set answer = ResultArrayAsBoolArray(res);
-            set pegs = Compare(master_sequence, Convert(answer));
-
+            
             //Output to terminal
             Message($"\n=======================================================");
             Message($"GUESS {iter}:");
-            Message($"Master sequence:  \t{Colorify(master_sequence)}");
-            Message($"Player guess: \t \t{Colorify(Convert(answer))}");
-        
+            Message($"Master sequence:  \t{master_sequence}");
+            Message($"Player guess: \t \t{BoolToIntArray(answer)}");
+            Message($"NERE: {pegs[0]}");
+            Message($"BIANCHE: {pegs[1]}");
+            Message($"Constrained: {constrained}");
+            Message($"N iterations: {nIterations}");
+            Message($"Guessed: {compatible}");
+            
+            set pegs = Compare(master_sequence, BoolToIntArray(answer));
+            set constrained = constrainChoice(constrained, BoolToIntArray(answer), pegs[0], pegs[1]);
+
             //Resetting all qubits
             ResetAll(register);
         
 
-        } until (pegs[0]==nColors);
+        } until (pegs[0]==nPositions);
 
         //Final output
         Message($"\n\nFantastico :D GroverMind found the solution in {iter} guesses!");
