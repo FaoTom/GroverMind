@@ -15,36 +15,38 @@ using Microsoft.Quantum.Simulation.Core;
 
 [assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"BoolToIntArray\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":14,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":24}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"inputs\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":25},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"BoolToIntArray\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":14,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":24}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"IsNumberPresentInArray\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":24,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"n\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":33},\"Item2\":{\"Line\":1,\"Column\":34}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"array\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":47}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]]},\"ReturnType\":{\"Case\":\"Bool\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"IsNumberPresentInArray\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":24,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"IntToBoolArray\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":28,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":24}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"inputs\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":25},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"IntToBoolArray\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":28,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":24}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"Compare\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":36,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":17}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"master\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":18},\"Item2\":{\"Line\":1,\"Column\":24}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"player\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":40}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"Compare\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":36,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":17}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"Colorify\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":66,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"input\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":19},\"Item2\":{\"Line\":1,\"Column\":24}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"String\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"IntToBoolArray\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":18,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":24}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"inputs\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":25},\"Item2\":{\"Line\":1,\"Column\":31}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Bool\"}]}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"IntToBoolArray\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":18,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":24}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"IsNumberPresentInArray\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":26,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":32}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"n\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":33},\"Item2\":{\"Line\":1,\"Column\":34}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"array\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":42},\"Item2\":{\"Line\":1,\"Column\":47}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]]},\"ReturnType\":{\"Case\":\"Bool\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"IsNumberPresentInArray\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":26,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":32}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"Compare\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":30,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":17}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"master\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":18},\"Item2\":{\"Line\":1,\"Column\":24}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"player\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":34},\"Item2\":{\"Line\":1,\"Column\":40}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"Compare\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":30,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":17}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"colorItemMapper\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":61,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"item\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":30}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"colors\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"String\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":37},\"Item2\":{\"Line\":1,\"Column\":43}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"String\"}]}]]},\"ReturnType\":{\"Case\":\"String\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"colorItemMapper\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":61,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":25}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"Colorify\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":66,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":18}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"input\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":19},\"Item2\":{\"Line\":1,\"Column\":24}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"colors\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"String\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":33},\"Item2\":{\"Line\":1,\"Column\":39}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"String\"}]}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"String\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
 [assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"Colorify\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":66,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":18}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"generateSequences\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":76,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":27}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"nColors\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":28},\"Item2\":{\"Line\":1,\"Column\":35}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"nPositions\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":53}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"generateSequences\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":76,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":27}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"IsTrue\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":95,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":16}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"a\"]},\"Type\":{\"Case\":\"Bool\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":17},\"Item2\":{\"Line\":1,\"Column\":18}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"Bool\"},\"ReturnType\":{\"Case\":\"Bool\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"IsTrue\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":95,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":16}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"constrainChoice\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":99,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"AllSequences\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":38}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"player\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":50},\"Item2\":{\"Line\":1,\"Column\":56}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"nBlack\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":71}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"nWhite\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":79},\"Item2\":{\"Line\":1,\"Column\":85}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"constrainChoice\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":99,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":25}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"InitialSequence\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":110,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":26}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"nPositions\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":37}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"nColors\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":51}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"InitialSequence\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":110,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":26}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"MarkMatchingColors\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":119,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":29}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"input\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":30},\"Item2\":{\"Line\":1,\"Column\":35}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ValidSequences\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":47},\"Item2\":{\"Line\":1,\"Column\":61}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":72},\"Item2\":{\"Line\":1,\"Column\":78}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"MarkMatchingColors\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":119,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":29}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"MarkMatchingColors\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":119,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":98},\"Item2\":{\"Line\":1,\"Column\":101}},\"Documentation\":[\"automatically generated QsAdjoint specialization for GroverMind.MarkMatchingColors\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"ApplyMarkingOracleAsPhaseOracle\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":127,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":42}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"MarkingOracle\"]},\"Type\":{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":57}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":95},\"Item2\":{\"Line\":1,\"Column\":103}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"ApplyMarkingOracleAsPhaseOracle\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":127,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":42}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"ApplyMarkingOracleAsPhaseOracle\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":127,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":125},\"Item2\":{\"Line\":1,\"Column\":128}},\"Documentation\":[\"automatically generated QsAdjoint specialization for GroverMind.ApplyMarkingOracleAsPhaseOracle\"]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"RunGroversSearch\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":138,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":28},\"Item2\":{\"Line\":1,\"Column\":36}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"phaseOracle\"]},\"Type\":{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":48},\"Item2\":{\"Line\":1,\"Column\":59}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"iterations\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":90},\"Item2\":{\"Line\":1,\"Column\":100}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"RunGroversSearch\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":138,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"GroverMind\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Core\",\"Name\":\"EntryPoint\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":12}}]}}]},\"Argument\":{\"Item1\":{\"Case\":\"UnitValue\"},\"Item2\":[],\"Item3\":{\"Case\":\"UnitType\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":12},\"Item2\":{\"Line\":1,\"Column\":14}}]}},\"Offset\":{\"Item1\":164,\"Item2\":4},\"Comments\":{\"OpeningComments\":[\"Main operation of the code\"],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":165,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"GroverMind\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":165,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"generateSequences\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":73,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":27}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"nColors\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":28},\"Item2\":{\"Line\":1,\"Column\":35}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"nPositions\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":43},\"Item2\":{\"Line\":1,\"Column\":53}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"generateSequences\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":73,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":27}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"IsTrue\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":92,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":16}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"t\"]},\"Type\":{\"Case\":\"Bool\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":17},\"Item2\":{\"Line\":1,\"Column\":18}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"Bool\"},\"ReturnType\":{\"Case\":\"Bool\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"IsTrue\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":92,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":16}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"constrainChoice\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":96,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"AllSequences\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":26},\"Item2\":{\"Line\":1,\"Column\":38}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"player\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":50},\"Item2\":{\"Line\":1,\"Column\":56}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"nBlack\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":65},\"Item2\":{\"Line\":1,\"Column\":71}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"nWhite\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":79},\"Item2\":{\"Line\":1,\"Column\":85}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"constrainChoice\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":96,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":25}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"InitialSequence\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":106,\"Item2\":0},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":26}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"nPositions\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":27},\"Item2\":{\"Line\":1,\"Column\":37}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"nColors\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":51}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"InitialSequence\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":106,\"Item2\":0},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":26}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"MarkMatchingColors\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":115,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":29}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"input\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":30},\"Item2\":{\"Line\":1,\"Column\":35}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"ValidSequences\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":47},\"Item2\":{\"Line\":1,\"Column\":61}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"target\"]},\"Type\":{\"Case\":\"Qubit\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":72},\"Item2\":{\"Line\":1,\"Column\":78}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Int\"}]}]},{\"Case\":\"Qubit\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"MarkMatchingColors\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":115,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":29}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"MarkMatchingColors\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":115,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":98},\"Item2\":{\"Line\":1,\"Column\":101}},\"Documentation\":[\"automatically generated QsAdjoint specialization for GroverMind.MarkMatchingColors\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"ApplyMarkingOracleAsPhaseOracle\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":123,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":42}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"MarkingOracle\"]},\"Type\":{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":44},\"Item2\":{\"Line\":1,\"Column\":57}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":95},\"Item2\":{\"Line\":1,\"Column\":103}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Qubit\"}]]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"ApplyMarkingOracleAsPhaseOracle\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":123,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":42}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsAdjoint\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"ApplyMarkingOracleAsPhaseOracle\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":123,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":125},\"Item2\":{\"Line\":1,\"Column\":128}},\"Documentation\":[\"automatically generated QsAdjoint specialization for GroverMind.ApplyMarkingOracleAsPhaseOracle\"]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"RunGroversSearch\"},\"Attributes\":[],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":134,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"register\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":28},\"Item2\":{\"Line\":1,\"Column\":36}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"phaseOracle\"]},\"Type\":{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":48},\"Item2\":{\"Line\":1,\"Column\":59}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"iterations\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":90},\"Item2\":{\"Line\":1,\"Column\":100}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"Operation\",\"Fields\":[{\"Item1\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"Item2\":{\"Case\":\"UnitType\"}},{\"Characteristics\":{\"Case\":\"SimpleSet\",\"Fields\":[{\"Case\":\"Adjointable\"}]},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}]},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"RunGroversSearch\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":134,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":27}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"GroverMind\",\"Name\":\"GroverMind\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Core\",\"Name\":\"EntryPoint\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":12}}]}}]},\"Argument\":{\"Item1\":{\"Case\":\"UnitValue\"},\"Item2\":[],\"Item3\":{\"Case\":\"UnitType\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":12},\"Item2\":{\"Line\":1,\"Column\":14}}]}},\"Offset\":{\"Item1\":160,\"Item2\":4},\"Comments\":{\"OpeningComments\":[\"Main operation of the code\"],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":161,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"GroverMind\",\"Name\":\"GroverMind\"},\"Attributes\":[],\"SourceFile\":\"/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs\",\"Position\":{\"Item1\":161,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":21}},\"Documentation\":[]}")]
 #line hidden
 namespace GroverMind
 {
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 15, 25)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 15, 19)]
     public partial class BoolToIntArray : Function<IQArray<Boolean>, IQArray<Int64>>, ICallable
     {
         public BoolToIntArray(IOperationFactory m) : base(m)
@@ -53,13 +55,7 @@ namespace GroverMind
 
         String ICallable.Name => "BoolToIntArray";
         String ICallable.FullName => "GroverMind.BoolToIntArray";
-        protected ICallable Microsoft__Quantum__Arrays__Chunks
-        {
-            get;
-            set;
-        }
-
-        protected ICallable Length__
+        protected ICallable Microsoft__Quantum__Arrays__Mapped
         {
             get;
             set;
@@ -71,31 +67,25 @@ namespace GroverMind
             set;
         }
 
+        protected ICallable Microsoft__Quantum__Arrays__Chunks
+        {
+            get;
+            set;
+        }
+
         public override Func<IQArray<Boolean>, IQArray<Int64>> __Body__ => (__in__) =>
         {
             var inputs = __in__;
-#line 17 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            var converted = QArray<Int64>.Create(5L);
-#line 18 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            var chunks = (IQArray<IQArray<Boolean>>)Microsoft__Quantum__Arrays__Chunks.Apply<IQArray<IQArray<Boolean>>>((2L, inputs));
-#line 19 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            foreach (var i in new QRange(0L, ((inputs.Length / 2L) - 1L)))
-#line hidden
-            {
-#line 20 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                converted.Modify(i, Microsoft__Quantum__Convert__BoolArrayAsInt.Apply(chunks[i]));
-            }
-
-#line 22 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            return converted;
+#line 16 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+            return Microsoft__Quantum__Arrays__Mapped.Apply<IQArray<Int64>>((Microsoft__Quantum__Convert__BoolArrayAsInt, Microsoft__Quantum__Arrays__Chunks.Apply<IQArray<IQArray<Boolean>>>((2L, inputs))));
         }
 
         ;
         public override void __Init__()
         {
-            this.Microsoft__Quantum__Arrays__Chunks = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Arrays.Chunks<>));
-            this.Length__ = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Core.Length<>));
+            this.Microsoft__Quantum__Arrays__Mapped = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Arrays.Mapped<,>));
             this.Microsoft__Quantum__Convert__BoolArrayAsInt = this.__Factory__.Get<ICallable<IQArray<Boolean>, Int64>>(typeof(global::Microsoft.Quantum.Convert.BoolArrayAsInt));
+            this.Microsoft__Quantum__Arrays__Chunks = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Arrays.Chunks<>));
         }
 
         public override IApplyData __DataIn__(IQArray<Boolean> data) => data;
@@ -106,59 +96,7 @@ namespace GroverMind
         }
     }
 
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 25, 29)]
-    public partial class IsNumberPresentInArray : Function<(Int64,IQArray<Int64>), Boolean>, ICallable
-    {
-        public IsNumberPresentInArray(IOperationFactory m) : base(m)
-        {
-        }
-
-        public class In : QTuple<(Int64,IQArray<Int64>)>, IApplyData
-        {
-            public In((Int64,IQArray<Int64>) data) : base(data)
-            {
-            }
-
-            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits => null;
-        }
-
-        String ICallable.Name => "IsNumberPresentInArray";
-        String ICallable.FullName => "GroverMind.IsNumberPresentInArray";
-        protected ICallable Microsoft__Quantum__Arrays__Any
-        {
-            get;
-            set;
-        }
-
-        protected ICallable<(Int64,Int64), Boolean> Microsoft__Quantum__Logical__EqualI
-        {
-            get;
-            set;
-        }
-
-        public override Func<(Int64,IQArray<Int64>), Boolean> __Body__ => (__in__) =>
-        {
-            var (n,array) = __in__;
-#line 26 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            return Microsoft__Quantum__Arrays__Any.Apply<Boolean>((Microsoft__Quantum__Logical__EqualI.Partial(new Func<Int64, (Int64,Int64)>((__arg1__) => (__arg1__, n))), array));
-        }
-
-        ;
-        public override void __Init__()
-        {
-            this.Microsoft__Quantum__Arrays__Any = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Arrays.Any<>));
-            this.Microsoft__Quantum__Logical__EqualI = this.__Factory__.Get<ICallable<(Int64,Int64), Boolean>>(typeof(global::Microsoft.Quantum.Logical.EqualI));
-        }
-
-        public override IApplyData __DataIn__((Int64,IQArray<Int64>) data) => new In(data);
-        public override IApplyData __DataOut__(Boolean data) => new QTuple<Boolean>(data);
-        public static System.Threading.Tasks.Task<Boolean> Run(IOperationFactory __m__, Int64 n, IQArray<Int64> array)
-        {
-            return __m__.Run<IsNumberPresentInArray, (Int64,IQArray<Int64>), Boolean>((n, array));
-        }
-    }
-
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 29, 37)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 19, 27)]
     public partial class IntToBoolArray : Function<IQArray<IQArray<Int64>>, IQArray<IQArray<Boolean>>>, ICallable
     {
         public IntToBoolArray(IOperationFactory m) : base(m)
@@ -200,17 +138,17 @@ namespace GroverMind
         public override Func<IQArray<IQArray<Int64>>, IQArray<IQArray<Boolean>>> __Body__ => (__in__) =>
         {
             var inputs = __in__;
-#line 30 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 20 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var ConvertedValid = QArray<IQArray<Boolean>>.Create(inputs.Length);
-#line 31 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 21 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             foreach (var (i,sequence) in Microsoft__Quantum__Arrays__Enumerated.Apply<IQArray<(Int64,IQArray<Int64>)>>(inputs))
 #line hidden
             {
-#line 32 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 22 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 ConvertedValid.Modify(i, Microsoft__Quantum__Arrays__Flattened.Apply<IQArray<Boolean>>(Microsoft__Quantum__Arrays__Mapped.Apply<IQArray<IQArray<Boolean>>>((Microsoft__Quantum__Convert__IntAsBoolArray.Partial(new Func<Int64, (Int64,Int64)>((__arg2__) => (__arg2__, 2L))), sequence))));
             }
 
-#line 34 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 24 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             return ConvertedValid;
         }
 
@@ -232,7 +170,59 @@ namespace GroverMind
         }
     }
 
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 37, 67)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 27, 31)]
+    public partial class IsNumberPresentInArray : Function<(Int64,IQArray<Int64>), Boolean>, ICallable
+    {
+        public IsNumberPresentInArray(IOperationFactory m) : base(m)
+        {
+        }
+
+        public class In : QTuple<(Int64,IQArray<Int64>)>, IApplyData
+        {
+            public In((Int64,IQArray<Int64>) data) : base(data)
+            {
+            }
+
+            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits => null;
+        }
+
+        String ICallable.Name => "IsNumberPresentInArray";
+        String ICallable.FullName => "GroverMind.IsNumberPresentInArray";
+        protected ICallable Microsoft__Quantum__Arrays__Any
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<(Int64,Int64), Boolean> Microsoft__Quantum__Logical__EqualI
+        {
+            get;
+            set;
+        }
+
+        public override Func<(Int64,IQArray<Int64>), Boolean> __Body__ => (__in__) =>
+        {
+            var (n,array) = __in__;
+#line 28 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+            return Microsoft__Quantum__Arrays__Any.Apply<Boolean>((Microsoft__Quantum__Logical__EqualI.Partial(new Func<Int64, (Int64,Int64)>((__arg1__) => (__arg1__, n))), array));
+        }
+
+        ;
+        public override void __Init__()
+        {
+            this.Microsoft__Quantum__Arrays__Any = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Arrays.Any<>));
+            this.Microsoft__Quantum__Logical__EqualI = this.__Factory__.Get<ICallable<(Int64,Int64), Boolean>>(typeof(global::Microsoft.Quantum.Logical.EqualI));
+        }
+
+        public override IApplyData __DataIn__((Int64,IQArray<Int64>) data) => new In(data);
+        public override IApplyData __DataOut__(Boolean data) => new QTuple<Boolean>(data);
+        public static System.Threading.Tasks.Task<Boolean> Run(IOperationFactory __m__, Int64 n, IQArray<Int64> array)
+        {
+            return __m__.Run<IsNumberPresentInArray, (Int64,IQArray<Int64>), Boolean>((n, array));
+        }
+    }
+
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 31, 62)]
     public partial class Compare : Function<(IQArray<Int64>,IQArray<Int64>), IQArray<Int64>>, ICallable
     {
         public Compare(IOperationFactory m) : base(m)
@@ -259,54 +249,62 @@ namespace GroverMind
         public override Func<(IQArray<Int64>,IQArray<Int64>), IQArray<Int64>> __Body__ => (__in__) =>
         {
             var (master,player) = __in__;
-#line 41 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 33 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var tank = QArray<Int64>.Create(player.Length);
-#line 42 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 34 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var nBlack = 0L;
-#line 43 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 35 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var nWhite = 0L;
-#line 44 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 36 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var mask_black = new QArray<Boolean>(false, false, false, false, false);
-#line 45 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 37 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var mask_used = new QArray<Boolean>(false, false, false, false, false);
+#line 38 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+            var first = true;
+#line 40 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+            foreach (var i in new QRange(0L, (player.Length - 1L)))
+#line hidden
+            {
+#line 41 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+                if ((player[i] == master[i]))
+                {
+#line 42 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+                    mask_black.Modify(i, true);
+#line 43 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+                    mask_used.Modify(i, true);
+#line 44 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+                    nBlack = (nBlack + 1L);
+                }
+            }
+
 #line 47 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             foreach (var i in new QRange(0L, (player.Length - 1L)))
 #line hidden
             {
 #line 48 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                if ((player[i] == master[i]))
-                {
-#line 49 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                    mask_black.Modify(i, true);
-#line 50 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                    nBlack = (nBlack + 1L);
-                }
-            }
-
-#line 53 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            foreach (var i in new QRange(0L, (player.Length - 1L)))
-#line hidden
-            {
-#line 54 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 if (!(mask_black[i]))
                 {
-#line 55 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 49 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     foreach (var j in new QRange(0L, (player.Length - 1L)))
 #line hidden
                     {
-#line 56 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                        if (((player[i] == master[j]) && !(mask_used[j])))
+#line 50 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+                        first = true;
+#line 51 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+                        if ((((player[i] == master[j]) && !(mask_used[j])) && first))
                         {
-#line 57 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 52 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                             nWhite = (nWhite + 1L);
-#line 58 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 53 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                             mask_used.Modify(i, true);
+#line 54 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+                            first = false;
                         }
                     }
                 }
             }
 
-#line 64 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 59 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             return new QArray<Int64>(nBlack, nWhite);
         }
 
@@ -324,55 +322,99 @@ namespace GroverMind
         }
     }
 
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 67, 77)]
-    public partial class Colorify : Function<IQArray<Int64>, IQArray<String>>, ICallable
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 62, 67)]
+    public partial class colorItemMapper : Function<(Int64,IQArray<String>), String>, ICallable
     {
-        public Colorify(IOperationFactory m) : base(m)
+        public colorItemMapper(IOperationFactory m) : base(m)
         {
         }
 
-        String ICallable.Name => "Colorify";
-        String ICallable.FullName => "GroverMind.Colorify";
-        protected ICallable Length__
+        public class In : QTuple<(Int64,IQArray<String>)>, IApplyData
         {
-            get;
-            set;
-        }
-
-        public override Func<IQArray<Int64>, IQArray<String>> __Body__ => (__in__) =>
-        {
-            var input = __in__;
-#line 69 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            var converted = QArray<String>.Create(input.Length);
-#line 70 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            var colours = (IQArray<String>)new QArray<String>("Red", "Green", "Blue", "Yellow");
-#line 71 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            foreach (var i in new QRange(0L, (input.Length - 1L)))
-#line hidden
+            public In((Int64,IQArray<String>) data) : base(data)
             {
-#line 72 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                converted.Modify(i, colours[input[i]]);
             }
 
-#line 74 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            return converted;
+            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits => null;
+        }
+
+        String ICallable.Name => "colorItemMapper";
+        String ICallable.FullName => "GroverMind.colorItemMapper";
+        public override Func<(Int64,IQArray<String>), String> __Body__ => (__in__) =>
+        {
+            var (item,colors) = __in__;
+#line 64 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+            return colors[item];
         }
 
         ;
         public override void __Init__()
         {
-            this.Length__ = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Core.Length<>));
         }
 
-        public override IApplyData __DataIn__(IQArray<Int64> data) => data;
-        public override IApplyData __DataOut__(IQArray<String> data) => data;
-        public static System.Threading.Tasks.Task<IQArray<String>> Run(IOperationFactory __m__, IQArray<Int64> input)
+        public override IApplyData __DataIn__((Int64,IQArray<String>) data) => new In(data);
+        public override IApplyData __DataOut__(String data) => new QTuple<String>(data);
+        public static System.Threading.Tasks.Task<String> Run(IOperationFactory __m__, Int64 item, IQArray<String> colors)
         {
-            return __m__.Run<Colorify, IQArray<Int64>, IQArray<String>>(input);
+            return __m__.Run<colorItemMapper, (Int64,IQArray<String>), String>((item, colors));
         }
     }
 
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 77, 96)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 67, 74)]
+    public partial class Colorify : Function<(IQArray<Int64>,IQArray<String>), IQArray<String>>, ICallable
+    {
+        public Colorify(IOperationFactory m) : base(m)
+        {
+        }
+
+        public class In : QTuple<(IQArray<Int64>,IQArray<String>)>, IApplyData
+        {
+            public In((IQArray<Int64>,IQArray<String>) data) : base(data)
+            {
+            }
+
+            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits => null;
+        }
+
+        String ICallable.Name => "Colorify";
+        String ICallable.FullName => "GroverMind.Colorify";
+        protected ICallable<(Int64,IQArray<String>), String> colorItemMapper__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable Microsoft__Quantum__Arrays__Mapped
+        {
+            get;
+            set;
+        }
+
+        public override Func<(IQArray<Int64>,IQArray<String>), IQArray<String>> __Body__ => (__in__) =>
+        {
+            var (input,colors) = __in__;
+#line 70 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+            var auxColorItem = colorItemMapper__.Partial(new Func<Int64, (Int64,IQArray<String>)>((__arg1__) => (__arg1__, colors)));
+#line 71 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+            return Microsoft__Quantum__Arrays__Mapped.Apply<IQArray<String>>((auxColorItem, input));
+        }
+
+        ;
+        public override void __Init__()
+        {
+            this.colorItemMapper__ = this.__Factory__.Get<ICallable<(Int64,IQArray<String>), String>>(typeof(colorItemMapper));
+            this.Microsoft__Quantum__Arrays__Mapped = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Arrays.Mapped<,>));
+        }
+
+        public override IApplyData __DataIn__((IQArray<Int64>,IQArray<String>) data) => new In(data);
+        public override IApplyData __DataOut__(IQArray<String> data) => data;
+        public static System.Threading.Tasks.Task<IQArray<String>> Run(IOperationFactory __m__, IQArray<Int64> input, IQArray<String> colors)
+        {
+            return __m__.Run<Colorify, (IQArray<Int64>,IQArray<String>), IQArray<String>>((input, colors));
+        }
+    }
+
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 74, 93)]
     public partial class generateSequences : Function<(Int64,Int64), IQArray<IQArray<Int64>>>, ICallable
     {
         public generateSequences(IOperationFactory m) : base(m)
@@ -393,31 +435,31 @@ namespace GroverMind
         public override Func<(Int64,Int64), IQArray<IQArray<Int64>>> __Body__ => (__in__) =>
         {
             var (nColors,nPositions) = __in__;
-#line 78 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 75 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var nCombinations = nColors.Pow(nPositions);
-#line 79 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 76 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var AllSequences = QArray<IQArray<Int64>>.Create(nCombinations);
-#line 80 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 77 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             foreach (var i in new QRange(0L, (nColors - 1L)))
 #line hidden
             {
-#line 81 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 78 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 foreach (var j in new QRange(0L, (nColors - 1L)))
 #line hidden
                 {
-#line 82 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 79 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     foreach (var k in new QRange(0L, (nColors - 1L)))
 #line hidden
                     {
-#line 83 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 80 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         foreach (var l in new QRange(0L, (nColors - 1L)))
 #line hidden
                         {
-#line 84 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 81 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                             foreach (var m in new QRange(0L, (nColors - 1L)))
 #line hidden
                             {
-#line 85 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 82 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                                 AllSequences.Modify((((((4L.Pow(4L) * i) + (4L.Pow(3L) * j)) + (4L.Pow(2L) * k)) + (4L * l)) + m), new QArray<Int64>(i, j, k, l, m));
                             }
                         }
@@ -425,7 +467,7 @@ namespace GroverMind
                 }
             }
 
-#line 92 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 89 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             return AllSequences;
         }
 
@@ -442,7 +484,7 @@ namespace GroverMind
         }
     }
 
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 96, 100)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 93, 97)]
     public partial class IsTrue : Function<Boolean, Boolean>, ICallable
     {
         public IsTrue(IOperationFactory m) : base(m)
@@ -453,9 +495,9 @@ namespace GroverMind
         String ICallable.FullName => "GroverMind.IsTrue";
         public override Func<Boolean, Boolean> __Body__ => (__in__) =>
         {
-            var a = __in__;
-#line 97 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            return a;
+            var t = __in__;
+#line 94 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+            return t;
         }
 
         ;
@@ -465,13 +507,13 @@ namespace GroverMind
 
         public override IApplyData __DataIn__(Boolean data) => new QTuple<Boolean>(data);
         public override IApplyData __DataOut__(Boolean data) => new QTuple<Boolean>(data);
-        public static System.Threading.Tasks.Task<Boolean> Run(IOperationFactory __m__, Boolean a)
+        public static System.Threading.Tasks.Task<Boolean> Run(IOperationFactory __m__, Boolean t)
         {
-            return __m__.Run<IsTrue, Boolean, Boolean>(a);
+            return __m__.Run<IsTrue, Boolean, Boolean>(t);
         }
     }
 
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 100, 111)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 97, 107)]
     public partial class constrainChoice : Function<(IQArray<IQArray<Int64>>,IQArray<Int64>,Int64,Int64), IQArray<IQArray<Int64>>>, ICallable
     {
         public constrainChoice(IOperationFactory m) : base(m)
@@ -540,17 +582,17 @@ namespace GroverMind
         public override Func<(IQArray<IQArray<Int64>>,IQArray<Int64>,Int64,Int64), IQArray<IQArray<Int64>>> __Body__ => (__in__) =>
         {
             var (AllSequences,player,nBlack,nWhite) = __in__;
-#line 102 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 98 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var BoolOutput = QArray<Boolean>.Create(AllSequences.Length);
-#line 103 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 99 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             foreach (var (i,sequence) in Microsoft__Quantum__Arrays__Enumerated.Apply<IQArray<(Int64,IQArray<Int64>)>>(AllSequences))
 #line hidden
             {
-#line 104 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 100 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 BoolOutput.Modify(i, Microsoft__Quantum__Arrays__EqualA.Apply<Boolean>((Microsoft__Quantum__Logical__EqualI, Compare__.Apply((sequence, player)), new QArray<Int64>(nBlack, nWhite))));
             }
 
-#line 106 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 102 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             return Microsoft__Quantum__Arrays__Subarray.Apply<IQArray<IQArray<Int64>>>((Microsoft__Quantum__Arrays__Where.Apply<IQArray<Int64>>((IsTrue__, BoolOutput?.Copy())), AllSequences));
         }
 
@@ -575,7 +617,7 @@ namespace GroverMind
         }
     }
 
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 111, 120)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 107, 116)]
     public partial class InitialSequence : Operation<(Int64,Int64), IQArray<Int64>>, ICallable
     {
         public InitialSequence(IOperationFactory m) : base(m)
@@ -602,18 +644,18 @@ namespace GroverMind
         public override Func<(Int64,Int64), IQArray<Int64>> __Body__ => (__in__) =>
         {
             var (nPositions,nColors) = __in__;
-#line 113 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            var arr1 = QArray<Int64>.Create(nPositions);
-#line 114 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 109 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+            var arr = QArray<Int64>.Create(nPositions);
+#line 110 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             foreach (var i in new QRange(0L, (nPositions - 1L)))
 #line hidden
             {
-#line 115 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                arr1.Modify(i, Microsoft__Quantum__Random__DrawRandomInt.Apply((0L, (nColors - 1L))));
+#line 111 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+                arr.Modify(i, Microsoft__Quantum__Random__DrawRandomInt.Apply((0L, (nColors - 1L))));
             }
 
-#line 117 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            return arr1;
+#line 113 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+            return arr;
         }
 
         ;
@@ -630,8 +672,8 @@ namespace GroverMind
         }
     }
 
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 120, 128)]
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Adjoint, 120, 128)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 116, 124)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Adjoint, 116, 124)]
     public partial class MarkMatchingColors : Adjointable<(IQArray<Qubit>,IQArray<IQArray<Int64>>,Qubit)>, ICallable
     {
         public MarkMatchingColors(IOperationFactory m) : base(m)
@@ -682,13 +724,13 @@ namespace GroverMind
         public override Func<(IQArray<Qubit>,IQArray<IQArray<Int64>>,Qubit), QVoid> __Body__ => (__in__) =>
         {
             var (input,ValidSequences,target) = __in__;
-#line 122 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 118 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var ConvertedValid = new QArray<IQArray<Boolean>>(IntToBoolArray__.Apply(ValidSequences));
-#line 123 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 119 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             foreach (var converted in ConvertedValid?.Copy())
 #line hidden
             {
-#line 124 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 120 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 Microsoft__Quantum__Canon__ControlledOnBitString.Apply<IUnitary>((converted, Microsoft__Quantum__Intrinsic__X)).Apply((input, target));
             }
 
@@ -700,13 +742,13 @@ namespace GroverMind
         public override Func<(IQArray<Qubit>,IQArray<IQArray<Int64>>,Qubit), QVoid> __AdjointBody__ => (__in__) =>
         {
             var (input,ValidSequences,target) = __in__;
-#line 120 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 116 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var __qsVar0__ConvertedValid__ = new QArray<IQArray<Boolean>>(IntToBoolArray__.Apply(ValidSequences));
-#line 120 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 116 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             foreach (var __qsVar1__converted__ in __qsVar0__ConvertedValid__.Slice(new QRange((__qsVar0__ConvertedValid__.Length - 1L), -1L, 0L)))
 #line hidden
             {
-#line 120 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 116 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 Microsoft__Quantum__Canon__ControlledOnBitString.Apply<IUnitary>((__qsVar1__converted__, Microsoft__Quantum__Intrinsic__X)).Adjoint.Apply((input, target));
             }
 
@@ -731,8 +773,8 @@ namespace GroverMind
         }
     }
 
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 128, 139)]
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Adjoint, 128, 139)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 124, 135)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Adjoint, 124, 135)]
     public partial class ApplyMarkingOracleAsPhaseOracle : Adjointable<(IAdjointable,IQArray<Qubit>)>, ICallable
     {
         public ApplyMarkingOracleAsPhaseOracle(IOperationFactory m) : base(m)
@@ -785,21 +827,21 @@ namespace GroverMind
             var (MarkingOracle,register) = __in__;
 #line hidden
             {
-#line 130 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 126 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 var target = Allocate__.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 132 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 128 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     Microsoft__Quantum__Intrinsic__X.Apply(target);
-#line 133 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 129 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     Microsoft__Quantum__Intrinsic__H.Apply(target);
-#line 135 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 131 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     MarkingOracle.Apply((register, target));
-#line 128 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 124 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     Microsoft__Quantum__Intrinsic__H.Adjoint.Apply(target);
-#line 128 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 124 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     Microsoft__Quantum__Intrinsic__X.Adjoint.Apply(target);
                 }
 #line hidden
@@ -827,23 +869,23 @@ namespace GroverMind
         public override Func<(IAdjointable,IQArray<Qubit>), QVoid> __AdjointBody__ => (__in__) =>
         {
             var (MarkingOracle,register) = __in__;
-#line 128 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 124 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             {
-#line 128 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 124 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 var __qsVar0__target__ = Allocate__.Apply();
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 128 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 124 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     Microsoft__Quantum__Intrinsic__X.Apply(__qsVar0__target__);
-#line 128 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 124 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     Microsoft__Quantum__Intrinsic__H.Apply(__qsVar0__target__);
-#line 128 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 124 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     MarkingOracle.Adjoint.Apply((register, __qsVar0__target__));
-#line 128 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 124 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     Microsoft__Quantum__Intrinsic__H.Adjoint.Apply(__qsVar0__target__);
-#line 128 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 124 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     Microsoft__Quantum__Intrinsic__X.Adjoint.Apply(__qsVar0__target__);
                 }
 #line hidden
@@ -884,7 +926,7 @@ namespace GroverMind
         }
     }
 
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 139, 166)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 135, 162)]
     public partial class RunGroversSearch : Operation<(IQArray<Qubit>,IAdjointable,Int64), QVoid>, ICallable
     {
         public RunGroversSearch(IOperationFactory m) : base(m)
@@ -953,23 +995,23 @@ namespace GroverMind
         public override Func<(IQArray<Qubit>,IAdjointable,Int64), QVoid> __Body__ => (__in__) =>
         {
             var (register,phaseOracle,iterations) = __in__;
-#line 144 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 140 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             Microsoft__Quantum__Canon__ApplyToEach.Apply((Microsoft__Quantum__Intrinsic__H, register));
-#line 147 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 143 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             foreach (var i in new QRange(1L, iterations))
 #line hidden
             {
-#line 150 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 146 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 phaseOracle.Apply(register);
-#line 154 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 150 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 Microsoft__Quantum__Canon__ApplyToEachA.Apply((Microsoft__Quantum__Intrinsic__H, register));
-#line 155 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 151 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 Microsoft__Quantum__Canon__ApplyToEachA.Apply((Microsoft__Quantum__Intrinsic__X, register));
-#line 157 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 153 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 Microsoft__Quantum__Intrinsic__Z.Controlled.Apply((Microsoft__Quantum__Arrays__Most.Apply<IQArray<Qubit>>(register), Microsoft__Quantum__Arrays__Tail.Apply<Qubit>(register)));
-#line 139 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 135 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 Microsoft__Quantum__Canon__ApplyToEachA.Adjoint.Apply((Microsoft__Quantum__Intrinsic__X, register));
-#line 139 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 135 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 Microsoft__Quantum__Canon__ApplyToEachA.Adjoint.Apply((Microsoft__Quantum__Intrinsic__H, register));
             }
 
@@ -997,7 +1039,7 @@ namespace GroverMind
         }
     }
 
-    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 166, -1)]
+    [SourceLocation("/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs", OperationFunctor.Body, 162, -1)]
     public partial class GroverMind : Operation<QVoid, QVoid>, ICallable
     {
         public GroverMind(IOperationFactory m) : base(m)
@@ -1129,80 +1171,80 @@ namespace GroverMind
 
         public override Func<QVoid, QVoid> __Body__ => (__in__) =>
         {
-#line 169 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-            var nQubits = 10L;
-#line 170 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 165 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var nColors = 4L;
-#line 171 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 166 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var nPositions = 5L;
-#line 172 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 167 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+            var nQubits = (2L * nPositions);
+#line 168 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+            var colors = (IQArray<String>)new QArray<String>("Red", "Green", "Blue", "Yellow");
+#line 169 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var N = Microsoft__Quantum__Convert__IntAsDouble.Apply(nColors.Pow(nPositions));
-#line 175 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 172 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var master_sequence = (IQArray<Int64>)InitialSequence__.Apply((nPositions, nColors));
-#line 178 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 175 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var compatible = 0L;
-#line 181 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 178 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var nIterations = 0L;
-#line 184 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 181 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var answer = QArray<Boolean>.Create(nQubits);
-#line 187 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 184 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
             var iter = 0L;
 #line hidden
             {
-#line 190 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 187 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                 var (register,output) = (Allocate__.Apply(nQubits), Allocate__.Apply());
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 192 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 189 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     var allSequences = (IQArray<IQArray<Int64>>)generateSequences__.Apply((nColors, nPositions));
-#line 194 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 191 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     var pegs = new QArray<Int64>(0L, 0L);
-#line 195 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 192 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     var constrained = new QArray<IQArray<Int64>>(allSequences);
-#line 198 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 195 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     while (true)
                     {
-#line 201 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 198 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         compatible = constrained.Length;
-#line 204 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 201 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         nIterations = Microsoft__Quantum__Math__Round.Apply(((((Microsoft__Quantum__Math__PI.Apply(QVoid.Instance) / 4D) * 1D) / Microsoft__Quantum__Math__ArcSin.Apply(Microsoft__Quantum__Math__Sqrt.Apply((Microsoft__Quantum__Convert__IntAsDouble.Apply(compatible) / N)))) - 0.5D));
-#line 207 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 202 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         iter = (iter + 1L);
-#line 210 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 205 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         var MarkingOracle = MarkMatchingColors__.Partial(new Func<(IQArray<Qubit>,Qubit), (IQArray<Qubit>,IQArray<IQArray<Int64>>,Qubit)>((__arg2__) => (__arg2__.Item1, constrained?.Copy(), __arg2__.Item2)));
-#line 213 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 208 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         var PhaseOracle = ApplyMarkingOracleAsPhaseOracle__.Partial(new Func<IQArray<Qubit>, (IAdjointable,IQArray<Qubit>)>((__arg3__) => (MarkingOracle, __arg3__)));
-#line 216 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 211 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         RunGroversSearch__.Apply((register, PhaseOracle, nIterations));
-#line 219 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 214 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         var res = (IQArray<Result>)Microsoft__Quantum__Measurement__MultiM.Apply(register);
-#line 222 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 217 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         answer = new QArray<Boolean>(Microsoft__Quantum__Convert__ResultArrayAsBoolArray.Apply(res));
-#line 225 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 220 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         Message__.Apply("\n=======================================================");
-#line 226 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                        Message__.Apply(String.Format("GUESS {0}:", iter));
-#line 227 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 221 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+                        Message__.Apply(String.Format("GUESS #{0}:", iter));
+#line 224 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         Message__.Apply(String.Format("Master sequence:  \t{0}", master_sequence));
-#line 228 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 225 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         Message__.Apply(String.Format("Player guess: \t \t{0}", BoolToIntArray__.Apply(answer?.Copy())));
+#line 226 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+                        Message__.Apply(String.Format("Black pegs: \t{0}", pegs[0L]));
+#line 227 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+                        Message__.Apply(String.Format("White pegs: \t{0}", pegs[1L]));
 #line 229 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                        Message__.Apply(String.Format("NERE: {0}", pegs[0L]));
+                        Message__.Apply(String.Format("N iterations: \t{0}", nIterations));
 #line 230 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                        Message__.Apply(String.Format("BIANCHE: {0}", pegs[1L]));
-#line 231 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                        Message__.Apply(String.Format("Constrained: {0}", constrained));
+                        Message__.Apply(String.Format("Guessed: \t{0}", compatible));
 #line 232 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                        Message__.Apply(String.Format("N iterations: {0}", nIterations));
-#line 233 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
-                        Message__.Apply(String.Format("Guessed: {0}", compatible));
-#line 235 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         pegs = new QArray<Int64>(Compare__.Apply((master_sequence, BoolToIntArray__.Apply(answer?.Copy()))));
-#line 236 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 233 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         constrained = new QArray<IQArray<Int64>>(constrainChoice__.Apply((constrained?.Copy(), BoolToIntArray__.Apply(answer?.Copy()), pegs[0L], pegs[1L])));
-#line 239 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 236 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                         ResetAll__.Apply(register);
                         if ((pegs[0L] == nPositions))
                         {
@@ -1213,7 +1255,7 @@ namespace GroverMind
                         }
                     }
 
-#line 245 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
+#line 242 "/Users/tommasofaorlin/Documents/GroverMind/GroverMind2/Program.qs"
                     Message__.Apply(String.Format("\n\nFantastico :D GroverMind found the solution in {0} guesses!", iter));
                 }
 #line hidden

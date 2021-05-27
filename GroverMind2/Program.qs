@@ -12,18 +12,8 @@ namespace GroverMind {
     
 // Functions____________________________________________________________________________________________
 
-    function BoolToIntArray(inputs : Bool[]) : Int[] {
-        //Converts from array of couples of bits to array of integers.
-        mutable converted = new Int[5];
-        let chunks = Chunks(2,inputs);
-        for i in 0 .. Length(inputs)/2-1 {
-            set converted w/= i <- BoolArrayAsInt(chunks[i]);
-        }
-        return converted;
-    }
-
-    function IsNumberPresentInArray(n : Int, array : Int[]) : Bool {
-    return Any(EqualI(_, n), array);
+    function BoolToIntArray(inputs : Bool[]) : Int[] { //Converts from base 2 to Int
+        return Mapped(BoolArrayAsInt, Chunks(2,inputs));
     }
 
     function IntToBoolArray(inputs : Int[][]) : Bool[][] {
@@ -34,45 +24,51 @@ namespace GroverMind {
         return ConvertedValid;
     }
 
+    function IsNumberPresentInArray(n : Int, array : Int[]) : Bool {
+    return Any(EqualI(_, n), array);
+    }
+
     function Compare(master : Int[], player : Int[]) : Int[] {
-        //Compares the two sequences of colors.
-        //For each position in the grid, returns a tuple containing a boolean (true if the colors are matching,
-        //false otherwise) and the color of the player sequence.
+        //Compares the two color sequences and returns the number of black and white pegs
         mutable tank = new Int[Length(player)];
         mutable nBlack = 0;
         mutable nWhite = 0;
         mutable mask_black = [false, false, false, false, false];
         mutable mask_used = [false, false, false, false, false];
+        mutable first = true;
 
         for i in 0..Length(player)-1{
             if (player[i] == master[i]){
                 set mask_black w/=i <- true;
-                set nBlack = nBlack + 1;
+                set mask_used w/=i <- true;
+                set nBlack += 1;
             }
         }
         for i in 0..Length(player)-1{
             if (not mask_black[i]){
                 for j in 0..Length(player)-1{
-                    if(player[i]==master[j] and not mask_used[j]){
-                        set nWhite = nWhite + 1;
+                    set first = true;
+                    if(player[i]==master[j] and not mask_used[j] and first){
+                        set nWhite += 1;
                         set mask_used w/=i <- true;
-                        break;
+                        set first = false;
                     }
                 }
             }
         }
-        
         return [nBlack, nWhite];
     }
 
-    function Colorify(input: Int[]) : String[] {
-        //Returns the array of colours given an array of integers
-        mutable converted = new String[Length(input)];
-        let colours = ["Red","Green","Blue","Yellow"];
-        for i in 0 .. Length(input)-1{
-            set converted w/=i <- colours[input[i]];
-        }
-        return converted;
+    function colorItemMapper(item: Int, colors: String[]) : String {
+        //Fact(item in Range(colors), "colorItem: Inconsistent  representation. Check Setup."); 
+        return colors[item];
+    }
+    
+    function Colorify(input: Int[], colors: String[]) : String[] {
+        //Requires: Dom(input) == Range(colors)
+        //Returns c such that (All i in IndexRange(input). c[i] = colors[input[i]])
+        let auxColorItem = colorItemMapper(_, colors);
+        return Mapped(auxColorItem, input);
     }
 
     function generateSequences(nColors : Int, nPositions : Int) : Int[][] {
@@ -94,12 +90,11 @@ namespace GroverMind {
 
     }
 
-    function IsTrue(a : Bool): Bool{
-        return a;
+    function IsTrue(t : Bool): Bool{
+        return t;
     }
 
     function constrainChoice(AllSequences : Int[][], player: Int[], nBlack : Int, nWhite : Int): Int[][]{
-        //return (Mapped(Compare, Zipped(player, AllSequences)) == [nBlack, nWhite]);
         mutable BoolOutput = new Bool[Length(AllSequences)];
         for (i, sequence) in Enumerated(AllSequences){
             set BoolOutput w/=i <- EqualA(EqualI, Compare(sequence, player), [nBlack, nWhite]);
@@ -109,13 +104,13 @@ namespace GroverMind {
 
 // Operations____________________________________________________________________________________________
 
-    operation InitialSequence(nPositions: Int, nColors: Int) : Int[] {
+operation InitialSequence(nPositions: Int, nColors: Int) : Int[] {
         //Generates a sequence of colours
-        mutable arr1 = new Int[nPositions];
+        mutable arr = new Int[nPositions];
         for i in 0 .. nPositions-1{
-            set arr1 w/= i <- DrawRandomInt(0,nColors-1);
+            set arr w/= i <- DrawRandomInt(0,nColors-1);
         }
-        return arr1;
+        return arr;
     }
     
     operation MarkMatchingColors(input : Qubit[], ValidSequences: Int[][], target : Qubit) : Unit is Adj {
@@ -166,10 +161,11 @@ namespace GroverMind {
     @EntryPoint()
     operation GroverMind() : Unit {
         
-        //Initializing number of qubits = 2 * number of point
-        let nQubits = 10;
+        //Initializing number of qubits = 2 * number of positions
         let nColors = 4;
         let nPositions = 5;
+        let nQubits = 2*nPositions;
+        let colors = ["Red","Green","Blue","Yellow"]; 
         let N = IntAsDouble(nColors^nPositions);
 
         //Generating the sequence of colours for the master
@@ -203,9 +199,7 @@ namespace GroverMind {
 
             //Calculating number of expected calls of the oracle for Grover's algorithm
             set nIterations = Round(PI()/4.*1./ArcSin(Sqrt(IntAsDouble(compatible)/N))-0.5);
-            
-            //Updating counter
-            set iter+=1;
+            set iter += 1;
             
             //Updating conditions in the marking oracle
             let MarkingOracle = MarkMatchingColors(_,constrained,_);
@@ -219,19 +213,21 @@ namespace GroverMind {
             //Measuring the qubits
             let res = MultiM(register);
 
-            //Saving guess and comparing it with the master sequence
+//Saving guess and comparing it with the master sequence
             set answer = ResultArrayAsBoolArray(res);
             
             //Output to terminal
             Message($"\n=======================================================");
-            Message($"GUESS {iter}:");
+            Message($"GUESS #{iter}:");
+            // Message($"Master sequence:  \t{Colorify(master_sequence,colors)}"); // uncomment to color output
+            // Message($"Player guess: \t \t{Colorify(BoolToIntArray(answer),colors)}");
             Message($"Master sequence:  \t{master_sequence}");
             Message($"Player guess: \t \t{BoolToIntArray(answer)}");
-            Message($"NERE: {pegs[0]}");
-            Message($"BIANCHE: {pegs[1]}");
-            Message($"Constrained: {constrained}");
-            Message($"N iterations: {nIterations}");
-            Message($"Guessed: {compatible}");
+            Message($"Black pegs: \t{pegs[0]}");
+            Message($"White pegs: \t{pegs[1]}");
+            // Message($"Constrained: {constrained}");
+            Message($"N iterations: \t{nIterations}");
+            Message($"Guessed: \t{compatible}");
             
             set pegs = Compare(master_sequence, BoolToIntArray(answer));
             set constrained = constrainChoice(constrained, BoolToIntArray(answer), pegs[0], pegs[1]);
