@@ -1,4 +1,4 @@
-# |GroverMind$\rbrace$
+# |GroverMind>
 
 This is where GroverMind lives! 
 
